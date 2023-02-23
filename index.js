@@ -22,3 +22,11 @@ up.addEventListener('click', () => {
 down.addEventListener('click', () => {
   updateCounter(-1);
 });
+
+function updateTime() {
+  const now = new Date();
+  time.innerText = now.toLocaleString();
+}
+
+updateTime();
+setInterval(updateTime, 1000);
