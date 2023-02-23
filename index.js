@@ -30,3 +30,7 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+mode.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
