@@ -14,3 +14,11 @@ function updateCounter(direction) {
     count.innerText = counter;
   }, 1000);
 }
+
+up.addEventListener('click', () => {
+  updateCounter(1);
+});
+
+down.addEventListener('click', () => {
+  updateCounter(-1);
+});
